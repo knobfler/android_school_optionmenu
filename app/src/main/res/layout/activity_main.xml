@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dpaulb.paul.optionmenu.MainActivity"
+    >
+
+   <TableLayout
+       android:id="@+id/insertTable"
+       android:visibility="invisible"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:stretchColumns="*">
+       <TableRow>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="name"
+               android:textAlignment="center"
+               android:textSize="20dp"
+               />
+           <EditText
+               android:id="@+id/inputName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_span="10"
+               />
+       </TableRow>
+       <TableRow>
+           <Button
+               android:id="@+id/cancelButton"
+               android:text="CANCEL"
+               android:layout_column="9"
+               />
+           <Button
+               android:id="@+id/okButton"
+               android:text="OK"
+               android:layout_column="10"
+               />
+       </TableRow>
+   </TableLayout>
+
+    <TextView
+        android:id="@+id/names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+
+</android.support.constraint.ConstraintLayout>
